@@ -200,11 +200,12 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
     }
     section {
         padding: 20px 20px 120px;
-        width: 118%;
+        width: 100%;
     }
     .content {
         flex-direction: column;
         margin-top: 100px;
+        width: 97%;
     }
     .content .textBox h2 {
         margin-bottom: 15px;
@@ -224,7 +225,7 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
         clip-path: circle(400px at center bottom);
     }
     .fa-4x {
-        font-size: 3em;
+        font-size: 2em;
     }
     .thumb {
         left: 33%;
@@ -234,7 +235,7 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
         max-width: 50px;
     }
     .content .imgBox {
-
+        width: 350px;
         margin-top: 3px;
     }
     .thumb li {
@@ -244,4 +245,5 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
     .logo-pic {
         height: 110px;
     }
+
 }
