@@ -225,7 +225,7 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
         clip-path: circle(400px at center bottom);
     }
     .fa-4x {
-        font-size: 2em;
+        font-size: 3em;
     }
     .thumb {
         left: 33%;
