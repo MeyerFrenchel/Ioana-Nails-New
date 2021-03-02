@@ -216,6 +216,7 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
     }
     .content .imgBox img {
         max-width: 274px;
+        max-height: 280px;
         justify-content: center;
     }
     .content .imgBox {
