@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ioana Nails</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section >
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img class="logo-pic" src="img/logo.jpg" alt="logo">
+                
+            </a>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Testimoniale</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Let me <span>GLAMOUR</span> your style</h2>
+                
+                <a href="">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img class="nail-pic" src="img/nails/thumb1.png" alt="nails">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img  src="img/nails/thumb1.png" alt="" onclick="imgSlider('img/nails/thumb1.png');changeCircleColor('linear-gradient(to bottom, #fffcdc, #d9a7c7)');"></li>
+            <li><img  src="img/nails/thumb2.png" alt="" onclick="imgSlider('img/nails/thumb2.png');changeCircleColor('linear-gradient(to top, #fc354c, #0abfbc)');"></li>
+            <li><img  src="img/nails/thumb3.png" alt="" onclick="imgSlider('img/nails/thumb3.png');changeCircleColor('linear-gradient(to bottom, #ffafbd, #ffc3a0)');"></li>
+            
+        </ul>
+        <ul class="sci">
+            <li><i class="fab fa-facebook fa-4x"></i></li>
+            <li><i class="fab fa-instagram fa-4x"></i></li>
+            <li><i class="fab fa-whatsapp fa-4x"></i></li>
+        </ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

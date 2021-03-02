@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 160px;
+}
+
+.logo-pic {
+    border-radius: 450px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color:#333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.content .textBox {
+    position: relative;
+    max-width: 650px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 5em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.content .textBox span {
+    color: #c3a45a;
+    font-size: 1.2em;
+    font-weight:  900;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #c3a45a;
+    color: #fff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 650px;
+
+}
+.thumb {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 78px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 80px;
+}
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+
+.fab {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+}
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    clip-path: circle(600px at right 800px);
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 20px;
+    }
+    header .logo {
+        
+        max-width: 135px;
+    }
+    header ul {
+        display: none;
+    }
+    section {
+        padding: 20px 20px 120px;
+        width: 118%;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2 {
+        margin-bottom: 15px;
+        font-size: 2.5em;
+    }
+    .content .textBox {
+        max-width: 100%;
+    }
+    .content .imgBox img {
+        max-width: 274px;
+        justify-content: center;
+    }
+    .content .imgBox {
+        padding: 12px;
+    }
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+    .fa-4x {
+        font-size: 3em;
+    }
+    .thumb {
+        left: 33%;
+        bottom: 20px;
+    }
+    .thumb li img {
+        max-width: 50px;
+    }
+    .content .imgBox {
+
+        margin-top: 3px;
+    }
+    .thumb li {
+        margin: 50px 20px;
+    }
+
+    .logo-pic {
+        height: 110px;
+    }
+}
