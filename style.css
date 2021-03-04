@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 header .logo {
@@ -44,17 +45,55 @@ header ul {
     display: flex;
 }
 
+
+
+.navbarMenu .active {
+    background: red;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+}
+
+
 header ul li {
     list-style: none;
 }
 header ul li a {
     display: inline-block;
-    color:#333;
+    color:#666;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    
 }
+header ul li a::after {
+    border-bottom: 3px solid transparent;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 30%; /* Change this to whatever width you want. */
+}
+header ul li a:hover::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 30%; /* Change this to whatever width you want. */
+    
+    border-bottom: 3px solid #d4af37; /* This creates the border. Replace black with whatever color you want. */
+}
+header ul li a:hover{
+    
+    color: #fdf497;
+}
+
+
 
 .content {
     position: relative;
@@ -152,7 +191,7 @@ header ul li a {
     display: inline-block;
     margin: 5px 0;
     transform: scale(0.6);
-    
+    color: #555;
 }
 
 .fa-facebook:hover {
@@ -197,7 +236,46 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
     }
     header ul {
         display: none;
+        
     }
+
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('img/menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    .toggle.active {
+        position: fixed;
+       
+        background: url('img/close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 22;
+    }
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        background: linear-gradient(to top, #cc95c0, #dbd4b4, #7aa1d2);
+        z-index: 3;
+        font-size: 4rem;
+    }
+
     section {
         padding: 20px 20px 120px;
         width: 100%;
