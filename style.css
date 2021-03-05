@@ -341,7 +341,8 @@ img {
     }
 
     .toggle{
-        position: relative;
+        position: fixed;
+        right: 3%;
         width: 30px;
         height: 30px;
         cursor: pointer;
@@ -383,7 +384,7 @@ img {
     }
     .content {
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 31px;
         width: 97%;
     }
     .content .textBox h2 {
@@ -424,6 +425,10 @@ img {
 
     .logo-pic {
         height: 110px;
+    }
+    .sci {
+        top:42%;
+        right:20px;
     }
 
 
