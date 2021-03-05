@@ -426,7 +426,7 @@ img {
         height: 110px;
     }
     .preview-box.show {
-        width: 50vh;
+        
         min-height: -webkit-fill-available;
     }
 
