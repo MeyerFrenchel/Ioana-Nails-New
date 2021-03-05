@@ -425,6 +425,9 @@ img {
     .logo-pic {
         height: 110px;
     }
-    
+    .preview-box.show {
+        width: 100vh;
+        min-height: -webkit-fill-available;
+    }
 
 }
