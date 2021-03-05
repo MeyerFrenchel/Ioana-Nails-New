@@ -383,7 +383,7 @@ img {
     }
     .content {
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 50px;
         width: 97%;
     }
     .content .textBox h2 {
@@ -408,7 +408,7 @@ img {
         font-size: 3em;
     }
     .thumb {
-        left: 33%;
+        left: 27%;
         bottom: 20px;
     }
     .thumb li img {
@@ -419,7 +419,7 @@ img {
         margin-top: 3px;
     }
     .thumb li {
-        margin: 50px 20px;
+        margin: 80px 20px;
     }
 
     .logo-pic {
