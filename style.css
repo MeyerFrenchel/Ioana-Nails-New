@@ -408,7 +408,12 @@ img {
         max-width: 500px;
         margin: 10px auto;
         line-height: 28px;
-        font-size: 20px;
+        font-size: 24px;
+        
+    }
+    .citat {
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 24px;
     }
     .footer-socials {
         list-style: none;
