@@ -364,21 +364,7 @@ img {
     background: transparent;
 }
 
-.popover-header {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffafbd;
-    background: ;
-    text-align: center;
-    
-  }
-  .popover-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffc3a0;
-    background-color:aliceblue ;
-    cursor: pointer;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
+
 
   /* FOOTER */
 
