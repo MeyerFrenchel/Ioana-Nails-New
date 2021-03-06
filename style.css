@@ -233,10 +233,18 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
 }
 /* Gallery */
 #gallery {
-    background: linear-gradient(to bottom, rgb(204, 149, 192), rgb(219, 212, 180), rgb(122, 161, 210));
+    background: linear-gradient(to left, rgb(204, 149, 192), rgb(219, 212, 180), rgb(122, 161, 210));
 }
 .row {
     margin-bottom: 10px;
+}
+.heart {
+    background: linear-gradient(to left,#eff0b6, #fde8cd);
+    clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z');
+    height: 216px;
+    width: 250px;
+    position: absolute;
+    left: 2%;
 }
 
 .preview-box {
@@ -327,8 +335,8 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     padding: 3%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ffca61), to(#ffec85));
-    background-image: linear-gradient(to right, #ffca61, #ffec85);
+    background-image: -webkit-gradient(linear, left top, right top, from(#b7657b), to(#f2b4b4));
+    background-image: linear-gradient(to right, #b7657b, #f2b4b4);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
@@ -344,6 +352,9 @@ img {
 
 }
 .far:hover {
+    color: red;
+}
+.far:active {
     color: red;
 }
 .card-body {
@@ -368,6 +379,64 @@ img {
     letter-spacing: 1px;
     font-weight: bold;
   }
+
+  /* FOOTER */
+
+    footer {
+        background: linear-gradient(to left, #cc95c0, #dbd4b4, #7aa1d2);
+        height: auto;
+        
+        padding-top: 40px;
+        color: #333;
+    }
+    
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+        font-family: 'Sacramento', cursive;
+    }
+    .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+    }
+    .footer-socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    .footer-socials li {
+        margin: 0 10px;
+    }
+    
+    .footer-link {
+        text-decoration: none;
+        text-transform: capitalize;
+        display: inline-block;
+        transition: all .2s;
+        color: #777;
+        font-family: Montserrat,sans-serif;
+    }
+  
+    .footer-link:hover {
+        color: #91091e;
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .4);
+            transform: rotate(5deg) scale(1.3);
+    }
+
+
 @media (max-width: 991px) {
     header {
         padding: 20px;
@@ -474,6 +543,11 @@ img {
         top:42%;
         right:20px;
     }
-
+    .heart {
+        display: none;
+    }
+    .section-heading {
+        font-size: 1.8rem;
+    }
 
 }
