@@ -349,7 +349,25 @@ img {
 .card-body {
     background:linear-gradient(to bottom, #ffafbd, #ffc3a0);
 }
+.btn{
+    background: transparent;
+}
 
+.popover-header {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffafbd;
+    background: ;
+    text-align: center;
+    
+  }
+  .popover-body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffc3a0;
+    background-color:aliceblue ;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
 @media (max-width: 991px) {
     header {
         padding: 20px;
