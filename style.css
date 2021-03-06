@@ -233,7 +233,7 @@ background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, 
 }
 /* Gallery */
 #gallery {
-    background: linear-gradient(to left, rgb(204, 149, 192), rgb(219, 212, 180), rgb(122, 161, 210));
+    background: linear-gradient(to bottom, rgb(204, 149, 192), rgb(219, 212, 180), rgb(122, 161, 210));
 }
 .row {
     margin-bottom: 10px;
@@ -321,6 +321,20 @@ img {
     width: 100%;
     background: rgba(7,7,7, 0.8);
     display: none;
+}
+.section-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffca61), to(#ffec85));
+    background-image: linear-gradient(to right, #ffca61, #ffec85);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    text-align: center;
 }
 
 
